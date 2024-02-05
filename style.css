@@ -74,6 +74,7 @@ body {
 header {
   padding: 2.5rem 1rem;
   background-color: var(--clr-brand);
+  color: var(--clr-neutral);
 }
 
 main {
@@ -89,11 +90,36 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  padding-block: 1.5rem;
 }
 
+.topnav__links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav__item {
+  list-style-type: none;
+}
+
+.topnav__link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.topnav__link:hover,
+.topnav__link:focus {
+  text-decoration: underline overline wavy var(--clr-brand-300);
+  text-underline-offset: .25rem;
+}
+
+
 h1 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: var(--clr-neutral);
 }
 
