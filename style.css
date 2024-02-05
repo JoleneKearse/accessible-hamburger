@@ -1,0 +1,108 @@
+:root {
+  --clr-brand: #1173ba;
+  --clr-brand-100: ##DDFFFF;
+  --clr-brand-200: #C3FFFF;
+  --clr-brand-300: #AAFFFF;
+  --clr-neutral: #fefefe;
+  --brand-gradient1: repeating-linear-gradient(65deg, #DDFFFF, #C3FFFF, #AAFFFF);
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+blockquote,
+a,
+abbr,
+address,
+cite,
+em,
+b,
+u,
+i,
+form,
+label,
+input,
+button,
+textarea,
+article,
+aside,
+details,
+nav,
+section,
+img,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'ui-system-font', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #232323;
+  background-color: var(--clr-neutral);
+}
+
+html,
+body {
+  max-height: 100%;
+}
+
+header {
+  padding: 2.5rem 1rem;
+  background-color: var(--clr-brand);
+}
+
+main {
+  max-width: 100%;
+  height: 600px;
+  background-image: url("./assets/waves.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--clr-neutral);
+}
+
+.brand__name {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  background: -webkit-repeating-linear-gradient(65deg, #AAFFFF,#C3FFFF, #DDFFFF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
