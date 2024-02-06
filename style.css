@@ -3,6 +3,7 @@
   --clr-brand-100: ##DDFFFF;
   --clr-brand-200: #C3FFFF;
   --clr-brand-300: #AAFFFF;
+  --clr-brand-accent: #78baae;
   --clr-neutral: #fefefe;
   --brand-gradient1: repeating-linear-gradient(65deg, #DDFFFF, #C3FFFF, #AAFFFF);
 }
@@ -63,7 +64,7 @@ body {
   font-weight: 400;
   line-height: 1.2;
   color: #232323;
-  background-color: var(--clr-neutral);
+  /* background-color: var(--clr-neutral); */
 }
 
 html,
@@ -99,6 +100,10 @@ main {
   gap: 1rem;
   margin: 0;
   padding: 0;
+
+  @media (width < 40em) {
+    flex-direction: column;
+  }
 }
 
 .topnav__item {
@@ -117,6 +122,26 @@ main {
   text-underline-offset: .25rem;
 }
 
+.topnav__menu {
+  @media (width < 40em) {
+    position: fixed;
+    inset: 0;
+    padding: 1.5rem;
+    background-color: var(--clr-brand-accent);
+  }
+}
+
+.topnav__icon {
+  width: 64px;
+  height: 64px;
+  background: transparent !important;
+}
+
+.topnav__close {
+  background: transparent !important;
+}
+
+***************** Topography ****************
 
 h1 {
   font-size: 1.75rem;
