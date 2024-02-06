@@ -134,11 +134,10 @@ main {
 .topnav__icon {
   width: 64px;
   height: 64px;
-  background: transparent !important;
 }
 
 .topnav__close {
-  background: transparent !important;
+  background: transparent;
 }
 
 ***************** Topography ****************
