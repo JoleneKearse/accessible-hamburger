@@ -156,9 +156,13 @@ main {
   }
 }
 
+.topnav__open, 
 .topnav__close {
   display: block;
   margin-inline-start: auto;
+}
+
+.topnav__close {
   margin-block-end: 2rem;
 }
 
@@ -175,6 +179,10 @@ main {
 .topnav__icon:hover,
 .topnav__icon:focus {
   scale: 1.05;
+}
+
+.topnav__open[aria-expanded="true"] + .topnav__menu {
+  translate: 0;
 }
 
 ***************** Topography ****************

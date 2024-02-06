@@ -22,20 +22,25 @@
         Navigation
       </span>
       <button 
+        id="btnOpen"
         class="topnav__open" 
         aria-expanded="false"
+        aria-labelledby="nav-label"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="topnav__icon__open"><g><path fill-rule="evenodd" d="M35.021 218.979h441.958a37.021 37.021 0 0 1 0 74.042H35.021a37.021 37.021 0 0 1 0-74.042zm441.958 32H35.021a5.022 5.022 0 0 0 0 10.044h441.958a5.022 5.022 0 0 0 0-10.044zM35.021 75.957h441.958a37.022 37.022 0 0 1 0 74.043H35.021a37.022 37.022 0 0 1 0-74.043zm441.958 32H35.021a5.022 5.022 0 0 0 0 10.043h441.958a5.022 5.022 0 0 0 0-10.043zM35.021 362h441.958a37.022 37.022 0 0 1 0 74.043H35.021a37.022 37.022 0 0 1 0-74.043zm441.958 32H35.021a5.022 5.022 0 0 0 0 10.043h441.958a5.022 5.022 0 0 0 0-10.043zM35.021 118h441.958a5.022 5.022 0 0 0 0-10.043H35.021a5.022 5.022 0 0 0 0 10.043zm441.958 132.978H35.021a5.022 5.022 0 0 0 0 10.044h441.958a5.022 5.022 0 0 0 0-10.044zm0 143.022H35.021a5.022 5.022 0 0 0 0 10.043h441.958a5.022 5.022 0 0 0 0-10.043z" fill="#c3ffff" opacity="1" data-original="#000000" class=""></path></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="topnav__icon__open" alt="open"><g><path fill-rule="evenodd" d="M35.021 218.979h441.958a37.021 37.021 0 0 1 0 74.042H35.021a37.021 37.021 0 0 1 0-74.042zm441.958 32H35.021a5.022 5.022 0 0 0 0 10.044h441.958a5.022 5.022 0 0 0 0-10.044zM35.021 75.957h441.958a37.022 37.022 0 0 1 0 74.043H35.021a37.022 37.022 0 0 1 0-74.043zm441.958 32H35.021a5.022 5.022 0 0 0 0 10.043h441.958a5.022 5.022 0 0 0 0-10.043zM35.021 362h441.958a37.022 37.022 0 0 1 0 74.043H35.021a37.022 37.022 0 0 1 0-74.043zm441.958 32H35.021a5.022 5.022 0 0 0 0 10.043h441.958a5.022 5.022 0 0 0 0-10.043zM35.021 118h441.958a5.022 5.022 0 0 0 0-10.043H35.021a5.022 5.022 0 0 0 0 10.043zm441.958 132.978H35.021a5.022 5.022 0 0 0 0 10.044h441.958a5.022 5.022 0 0 0 0-10.044zm0 143.022H35.021a5.022 5.022 0 0 0 0 10.043h441.958a5.022 5.022 0 0 0 0-10.043z" fill="#c3ffff" opacity="1" data-original="#000000" class=""></path></g></svg>
       </button>
 
       <div 
         class="topnav__menu" 
         role="dialog"
+        aria-labelledby="nav-label"
       >
         <button 
+          id="btnClose"
           class="topnav__close"
+          aria-label="Close"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="topnav__icon__close"><g><linearGradient id="a" x1="2" x2="30" y1="15.964" y2="15.964" gradientUnits="userSpaceOnUse"><stop stop-opacity="0.7" stop-color="#1173ba" offset="0"></stop><stop stop-opacity="1" stop-color="#1173ba" offset="1"></stop></linearGradient><path fill="url(#a)" d="M16 2A14.015 14.015 0 0 0 2 16c.769 18.573 27.234 18.568 28 0A14.015 14.015 0 0 0 16 2zm5.14 17.73a.997.997 0 0 1-1.41 1.41L16 17.41l-3.73 3.73a.979.979 0 0 1-1.41 0 .996.996 0 0 1 0-1.41L14.59 16l-3.73-3.73a.997.997 0 0 1 1.41-1.41L16 14.59l3.73-3.73a.997.997 0 0 1 1.41 1.41L17.41 16z" opacity="1" data-original="url(#a)"></path></g></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512" xml:space="preserve" class="topnav__icon__close" alt="close"><g><linearGradient id="a" x1="2" x2="30" y1="15.964" y2="15.964" gradientUnits="userSpaceOnUse"><stop stop-opacity="0.7" stop-color="#1173ba" offset="0"></stop><stop stop-opacity="1" stop-color="#1173ba" offset="1"></stop></linearGradient><path fill="url(#a)" d="M16 2A14.015 14.015 0 0 0 2 16c.769 18.573 27.234 18.568 28 0A14.015 14.015 0 0 0 16 2zm5.14 17.73a.997.997 0 0 1-1.41 1.41L16 17.41l-3.73 3.73a.979.979 0 0 1-1.41 0 .996.996 0 0 1 0-1.41L14.59 16l-3.73-3.73a.997.997 0 0 1 1.41-1.41L16 14.59l3.73-3.73a.997.997 0 0 1 1.41 1.41L17.41 16z" opacity="1" data-original="url(#a)"></path></g></svg>
         </button>
 
         <ul class="topnav__links">
@@ -53,5 +58,6 @@
     </nav>
   </header>
   <main></main>
+  <script src="./index.js"></script>
 </body>
 </html>
